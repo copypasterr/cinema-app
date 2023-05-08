@@ -16,6 +16,9 @@ A simple imitation of the backend of a cinema app. Using Spring and Hibernate
 - Build the project using Maven: mvn clean install;
 - Deploy the WAR file to a servlet container such as Tomcat or other;
 - After deploying the project, you can use the web application using the link http://localhost:8080/ and PostMan
+- Default credentials:
+  - For admin login: admin@i.ua, password: admin123
+  - For user login: user@gmail.com, password: user!213
 
 ## Features
 - Registration of users;
