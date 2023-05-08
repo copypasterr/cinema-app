@@ -56,6 +56,7 @@ A simple imitation of the backend of a cinema app. Using Spring and Hibernate
 This project utilizes the Layered Architectural Pattern, also known as Layered Design. This pattern helps to separate the application into several abstraction layers, each with specific responsibilities. In this case, the application is divided into levels such as controllers, services, DAO, models, and others. 
 
 The Layered Architectural Pattern promotes modularity, maintainability, and testability of the application. By separating concerns into distinct layers, the code becomes more organized and easier to understand, thus enhancing the overall quality of the project.
+
 1. config: This package contains configuration classes for application, such as Spring configuration, Hibernate configuration, security configuration.
 
 2. controller: This package holds the controllers, which handle HTTP requests and responses. They are responsible for processing user inputs, invoking services, and returning appropriate views or responses.
@@ -74,5 +75,6 @@ The Layered Architectural Pattern promotes modularity, maintainability, and test
 
 9. service: This package contains service classes that implement the business logic of your application. Services are responsible for coordinating tasks, such as invoking DAOs, performing validations, and applying business rules.
 
+10. util: Package with helper class DateTimePatternUtil to define the time format
 ## Author
 Volodymyr Prysiazhniuk
