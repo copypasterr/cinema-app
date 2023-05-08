@@ -18,7 +18,7 @@ public class Role {
     private Long id;
     @Column(name = "name")
     @Enumerated(value = EnumType.STRING)
-    private RoleName roleName;
+    private RoleName name;
 
     public enum RoleName {
         ADMIN,
@@ -33,12 +33,12 @@ public class Role {
         this.id = id;
     }
 
-    public RoleName getRoleName() {
-        return roleName;
+    public RoleName getName() {
+        return name;
     }
 
-    public void setRoleName(RoleName roleName) {
-        this.roleName = roleName;
+    public void setName(RoleName name) {
+        this.name = name;
     }
 
     @Override
@@ -51,11 +51,11 @@ public class Role {
         }
         Role role = (Role) o;
         return Objects.equals(id, role.id)
-                && roleName == role.roleName;
+                && name == role.name;
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, roleName);
+        return Objects.hash(id, name);
     }
 }
