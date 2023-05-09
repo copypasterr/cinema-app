@@ -13,32 +13,32 @@ A simple imitation of the backend of a cinema app. Using Spring and Hibernate
 ## How to run
 - Install IntelliJ IdEA;
 - Clone project to your local machine;
-- Configure your Mysql database and db.properties;
-- Build the project using Maven: mvn clean install;
+- Configure your Mysql database and `db.properties`;
+- Build the project using Maven: `mvn clean install`;
 - Deploy the WAR file to a servlet container such as Tomcat or other;
-- After deploying the project, you can use the web application using the link http://localhost:8080/ and PostMan
+- After deploying the project, you can use the web application using the link `http://localhost:8080/` and PostMan
 - Default credentials:
-  - For admin login: admin@i.ua, password: admin123
-  - For user login: user@gmail.com, password: user!213
+  - For admin login: `admin@i.ua`, password: `admin123`
+  - For user login: `user@gmail.com`, password: `user!213`
 
 ## Features
 - Registration of users;
 - Authentication;
 - Authorization
   - Unregistered Users
-    - Can register (POST '/register').
+    - Can register (`POST /register`).
   - Users with the "USER" Role
-    - Can access the list of cinema halls, movies, and available sessions (GET '/cinema-halls', '/movies', '/movie-sessions/available').
-    - Can view their own orders (GET '/orders').
-    - Can complete orders (POST '/orders/complete').
-    - Can add sessions to their shopping cart (PUT '/shopping-carts/movie-sessions').
-    - Can retrieve information about their shopping cart (GET '/shopping-carts/by-user').
+    - Can access the list of cinema halls, movies, and available sessions (`GET /cinema-halls`, `/movies`, `/movie-sessions/available`).
+    - Can view their own orders (`GET /orders`).
+    - Can complete orders (`POST /orders/complete`).
+    - Can add sessions to their shopping cart (`PUT /shopping-carts/movie-sessions`).
+    - Can retrieve information about their shopping cart (`GET /shopping-carts/by-user`).
   - Users with the "ADMIN" Role
-    - Can access the list of cinema halls, movies, and available sessions (GET '/cinema-halls', '/movies', '/movie-sessions/available').
-    - Can add cinema halls, movies, and sessions (POST '/cinema-halls', '/movies', '/movie-sessions').
-    - Can update session information (PUT '/movie-sessions/{id}').
-    - Can delete sessions (DELETE '/movie-sessions/{id}').
-    - Can retrieve information about users by email (GET '/users/by-email').
+    - Can access the list of cinema halls, movies, and available sessions (`GET /cinema-halls`, `/movies`, `/movie-sessions/available`).
+    - Can add cinema halls, movies, and sessions (`POST /cinema-halls`, `/movies`, `/movie-sessions`).
+    - Can update session information (`PUT /movie-sessions/{id}`).
+    - Can delete sessions (`DELETE /movie-sessions/{id}`).
+    - Can retrieve information about users by email (`GET /users/by-email`).
   - All other requests require user authentication. The login form and HTTP authentication are available for all users. CSRF protection is disabled.
 
 ## Technology
@@ -75,6 +75,7 @@ The Layered Architectural Pattern promotes modularity, maintainability, and test
 
 9. service: This package contains service classes that implement the business logic of your application. Services are responsible for coordinating tasks, such as invoking DAOs, performing validations, and applying business rules.
 
-10. util: Package with helper class DateTimePatternUtil to define the time format
-## Author
+10. util: Package with helper class DateTimePatternUtil to define the time format.
+
+Author
 Volodymyr Prysiazhniuk
