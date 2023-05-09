@@ -77,5 +77,6 @@ The Layered Architectural Pattern promotes modularity, maintainability, and test
 
 10. util: Package with helper class DateTimePatternUtil to define the time format.
 
-Author
+
+## Author
 Volodymyr Prysiazhniuk
