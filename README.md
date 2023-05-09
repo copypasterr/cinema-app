@@ -26,19 +26,19 @@ A simple imitation of the backend of a cinema app. Using Spring and Hibernate
 - Authentication;
 - Authorization
   - Unregistered Users
-    - Can register (POST /register).
+    - Can register (POST '/register').
   - Users with the "USER" Role
-    - Can access the list of cinema halls, movies, and available sessions (GET /cinema-halls, /movies, /movie-sessions/available).
-    - Can view their own orders (GET /orders).
-    - Can complete orders (POST /orders/complete).
-    - Can add sessions to their shopping cart (PUT /shopping-carts/movie-sessions).
-    - Can retrieve information about their shopping cart (GET /shopping-carts/by-user).
+    - Can access the list of cinema halls, movies, and available sessions (GET '/cinema-halls', '/movies', '/movie-sessions/available').
+    - Can view their own orders (GET '/orders').
+    - Can complete orders (POST '/orders/complete').
+    - Can add sessions to their shopping cart (PUT '/shopping-carts/movie-sessions').
+    - Can retrieve information about their shopping cart (GET '/shopping-carts/by-user').
   - Users with the "ADMIN" Role
-    - Can access the list of cinema halls, movies, and available sessions (GET /cinema-halls, /movies, /movie-sessions/available).
-    - Can add cinema halls, movies, and sessions (POST /cinema-halls, /movies, /movie-sessions).
-    - Can update session information (PUT /movie-sessions/{id}).
-    - Can delete sessions (DELETE /movie-sessions/{id}).
-    - Can retrieve information about users by email (GET /users/by-email).
+    - Can access the list of cinema halls, movies, and available sessions (GET '/cinema-halls', '/movies', '/movie-sessions/available').
+    - Can add cinema halls, movies, and sessions (POST '/cinema-halls', '/movies', '/movie-sessions').
+    - Can update session information (PUT '/movie-sessions/{id}').
+    - Can delete sessions (DELETE '/movie-sessions/{id}').
+    - Can retrieve information about users by email (GET '/users/by-email').
   - All other requests require user authentication. The login form and HTTP authentication are available for all users. CSRF protection is disabled.
 
 ## Technology
